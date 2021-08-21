@@ -6,6 +6,22 @@ In the `ip_forecast.sh` file I was originally trying to parse the `dt` json obje
 
 The `Dockerfile` uses `ENTRYPOINT` to execute the shell script when the container is run.
 
+## Exectuions and outputs of `ip_forecast.sh`
+
+```./ip_forecast.sh
+Weather forecast for 47.4.5.8 (Fort Worth):
+2021-08-22: clear sky throughout the day.
+2021-08-23: clear sky throughout the day.
+2021-08-24: clear sky throughout the day.
+```
+
+```./ip_forecast.sh 1.1.1.1
+Weather forecast for 1.1.1.1 (Miami):
+2021-08-22: moderate rain throughout the day.
+2021-08-23: moderate rain throughout the day.
+2021-08-24: light rain throughout the day.
+```
+
 ## Building the Docker Container
 
 In order to build the docker container and tag it as ip_forecast:1.0 run the below command.
