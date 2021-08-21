@@ -26,12 +26,16 @@ Weather forecast for 1.1.1.1 (Miami):
 
 In order to build the docker container and tag it as ip_forecast:1.0 run the below command.
 
-```docker build -t ip_forecast:1.0 ./```
+```
+docker build -t ip_forecast:1.0 ./
+```
 
 ## Running the Container
 
 To Run the container and output the Weather Forecast run the below command. If you run without the IP address, it will return your local weather.
 
-```sudo docker run ip_forecast 1.1.1.1```
+```
+sudo docker run ip_forecast 1.1.1.1
+```
 
 To ensure you are using the `1.0` tag instead of the `latest` run `sudo docker run ip_forecast:1.0` instead.
